@@ -30,18 +30,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F761AD372D4CB16D00A51670 /* Exceptions for "eCom" folder in "eComTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Presentation/CartView/CartView.swift,
-				Presentation/CartView/CartViewModel.swift,
-				Presentation/ConfirmationView/ConfirmationView.swift,
-				Presentation/ConfirmationView/ConfirmationViewModel.swift,
-				Presentation/ProductDetailView/ProductDetailView.swift,
-				Presentation/ProductDetailView/ProductDetailViewModel.swift,
-			);
-			target = F761AD142D4CAE7E00A51670 /* eComTests */;
-		};
 		F7DB966B2D4FBAA500E8AFF6 /* Exceptions for "eCom" folder in "eCom" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -56,7 +44,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				F7DB966B2D4FBAA500E8AFF6 /* Exceptions for "eCom" folder in "eCom" target */,
-				F761AD372D4CB16D00A51670 /* Exceptions for "eCom" folder in "eComTests" target */,
 			);
 			path = eCom;
 			sourceTree = "<group>";

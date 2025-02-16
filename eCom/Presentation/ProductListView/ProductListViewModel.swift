@@ -20,7 +20,7 @@ class ProductListViewModel {
 
     let cartManager: CartManager
     
-    private var products: [ProductModel]? {
+    var products: [ProductModel]? {
         didSet {
             productList = products
         }
@@ -46,7 +46,7 @@ class ProductListViewModel {
                     self.productList = self.products
                     return
                 }
-                if let item, let index = self.products?.firstIndex(where: { $0.id == item.id }) {
+                if let item, let index = self.productList?.firstIndex(where: { $0.id == item.id }) {
                     self.productList?[index] = item
                 }
             }
