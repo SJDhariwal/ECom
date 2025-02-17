@@ -21,6 +21,8 @@ actor DefaultCartManager: @preconcurrency CartManager {
     var cartItemsInfo: AnyPublisher<([ProductModel], ProductModel?), Never> { _cartItems.eraseToAnyPublisher() }
 
     func addToCart(item: ProductModel) {
+        guard let quantity = item.quantity, quantity > 0 else { return }
+        
         if let index = cartItems.firstIndex(where: { $0.id == item.id }) {
             cartItems[index] = item
         } else {
